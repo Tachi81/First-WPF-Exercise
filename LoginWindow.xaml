@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfBasics.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBasics"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Login" Margin="25,65,25,0" />
+            <TextBox Name="Login" Padding="2" Margin="25,0,25,10"/>
+            <TextBlock Text="Password" Margin="25,0,25,0" />
+            <PasswordBox Name="Password" Padding="2" Margin="25,0,25,10"/>
+            <Button Width="55" Click="ValidateUser">Login</Button>
+        </StackPanel>
+    </Grid>
+</Window>
